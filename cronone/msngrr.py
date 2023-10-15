@@ -96,18 +96,18 @@ class Setting(Base):
             'SetDate': self.dateLog.strftime("%d/%m %Y %H:%M")
         } 
 
-async def mke_inspxn(setup,acc):
-    print('doing test for setup with asset: ' + setup['asset'] + ' and timeframe ' + setup['TimeFrame']  )
-    resultfr = loop2.run_until_complete(make_check(setup,acc))
-#  if resultfr is not empty take the last value and send it as a text
-    if resultfr.empty:
-        return 'no result'
-    res = send_txt(resultfr, setuppp=setup)
+# async def mke_inspxn(setup,acc):
+#     print('doing test for setup with asset: ' + setup['asset'] + ' and timeframe ' + setup['TimeFrame']  )
+#     resultfr = loop2.run_until_complete(make_check(setup,acc))
+# #  if resultfr is not empty take the last value and send it as a text
+#     if resultfr.empty:
+#         return 'no result'
+#     res = send_txt(resultfr, setuppp=setup)
 
-    if res == True:
-        return "sent message"
-    else:
-        return "no message sent"
+#     if res == True:
+#         return "sent message"
+#     else:
+#         return "no message sent"
     
 print('doing job 1')
 
