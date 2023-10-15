@@ -7,6 +7,7 @@ APScheduler==3.6.3
 async-timeout==3.0.1
 attrs==23.1.0
 Backtesting==0.3.3
+bokeh==3.3.0
 cachetools==4.2.2
 certifi==2022.12.7
 chardet==3.0.4
